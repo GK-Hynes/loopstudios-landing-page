@@ -21,20 +21,115 @@
     <title>Frontend Mentor | Loopstudios landing page</title>
   </head>
   <body>
-    About Careers Events Products Support Immersive experiences that deliver The
-    leader in interactive VR Founded in 2011, Loopstudios has been producing
-    world-class virtual reality projects for some of the best companies around
-    the globe. Our award-winning creations have transformed businesses through
-    digital experiences that bind to their brand. Our creations See all Deep
-    earth Night arcade Soccer team VR The grid From up above VR Pocket borealis
-    The curiosity Make it fisheye About Careers Events Products Support © 2021
-    Loopstudios. All rights reserved.
-
-    <footer class="footer">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+    <header>
+      <!-- <nav class="nav">
+        <ul>
+          <li class="nav__link">About</li>
+          <li class="nav__link">Careers</li>
+          <li class="nav__link">Events</li>
+          <li class="nav__link">Products</li>
+          <li class="nav__link">Support</li>
+        </ul>
+      </nav> -->
+    </header>
+    <main>
+      <section class="hero" id="hero">
+        <img class="hero-logo" src="./images/logo.svg" alt="Loopstudios Logo" />
+        <h1 class="heading__main">Immersive experiences that deliver</h1>
+      </section>
+      <section class="about" id="aboutUs">
+        <img
+          class="about__image"
+          src="./images/desktop/image-interactive.jpg"
+          alt="Man in blue t-shirt trying out VR headset."
+        />
+        <h2 class="heading__secondary heading__about">
+          The leader in interactive VR
+        </h2>
+        <p class="about__text">
+          Founded in 2011, Loopstudios has been producing world-class virtual
+          reality projects for some of the best companies around the globe. Our
+          award-winning products have transformed businesses through digital
+          experiences that bind to their brand.
+        </p>
+      </section>
+      <section class="products" id="products">
+        <h2 class="heading__secondary">Our products</h2>
+        <div class="product-grid">
+          <div class="product product-1">
+            <h3 class="product__title">Deep earth</h3>
+          </div>
+          <div class="product product-2">
+            <h3 class="product__title">Night arcade</h3>
+          </div>
+          <div class="product product-3">
+            <h3 class="product__title">Soccer team VR</h3>
+          </div>
+          <div class="product product-4">
+            <h3 class="product__title">The grid</h3>
+          </div>
+          <div class="product product-5">
+            <h3 class="product__title">From up above VR</h3>
+          </div>
+          <div class="product product-6">
+            <h3 class="product__title">Pocket borealis</h3>
+          </div>
+          <div class="product product-7">
+            <h3 class="product__title">The curiosity</h3>
+          </div>
+          <div class="product product-8">
+            <h3 class="product__title">Make it fisheye</h3>
+          </div>
+        </div>
+        <div class="product__link-wrapper">
+          <a class="product__link" href="#">See all</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" id="footer">
+      <img
+        class="footer__logo"
+        src="./images/logo.svg"
+        alt="Loopstudios Logo"
+      />
+      <ul class="footer_list">
+        <li><a class="footer__link" href="#">About</a></li>
+        <li><a class="footer__link" href="#">Careers</a></li>
+        <li><a class="footer__link" href="#">Events</a></li>
+        <li><a class="footer__link" href="#">Products</a></li>
+        <li><a class="footer__link" href="#">Support</a></li>
+      </ul>
+      <div class="footer__social-links-wrapper">
+        <ul class="footer__social-links">
+          <li>
+            <a class="footer__social-link" href="#"
+              ><img src="./images/icon-facebook.svg" alt="Facebook Link"
+            /></a>
+          </li>
+          <li>
+            <a class="footer__social-link" href="#"
+              ><img src="./images/icon-twitter.svg" alt="Twitter Link"
+            /></a>
+          </li>
+          <li>
+            <a class="footer__social-link" href="#"
+              ><img src="./images/icon-pinterest.svg" alt="Pinterest Link"
+            /></a>
+          </li>
+          <li>
+            <a class="footer__social-link" href="#"
+              ><img src="./images/icon-instagram.svg" alt="Instagram Link"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <p class="footer__copyright">© 2021 Loopstudios. All rights reserved.</p>
+      <div class="footer__attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/GK-Hynes">Gerard Hynes</a>.
+      </div>
     </footer>
   </body>
 </html>
