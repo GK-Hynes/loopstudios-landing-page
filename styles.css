@@ -35,20 +35,61 @@ h3 {
 .header {
   position: absolute;
   width: 100%;
+  padding: 2rem 1.5rem;
+}
+
+.header__main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 1.5rem;
 }
 
 .logo {
   width: 145px;
+  z-index: 9999;
 }
 
 .menu-button {
   background: transparent;
   border: none;
   cursor: pointer;
+}
+
+.menu-button--close {
+  z-index: 9999;
+}
+
+.mobile-menu {
+  position: absolute;
+  background: var(--black);
+  width: 100%;
+  height: 100vh;
+  padding: 2rem 1.5rem;
+  display: grid;
+  align-content: center;
+}
+
+.nav__list {
+  list-style: none;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.nav__link {
+  display: block;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-family: "Josefin Sans", sans-serif;
+  text-decoration: none;
+  color: var(--white);
+}
+
+.closed {
+  display: none;
+}
+
+.open {
+  display: grid;
 }
 
 /* Hero styles */

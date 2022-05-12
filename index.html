@@ -16,30 +16,51 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./index.js"></script>
     <title>Frontend Mentor | Loopstudios landing page</title>
   </head>
   <body>
-    <header class="header">
-      <!-- <nav class="nav">
-        <ul>
-          <li class="nav__link">About</li>
-          <li class="nav__link">Careers</li>
-          <li class="nav__link">Events</li>
-          <li class="nav__link">Products</li>
-          <li class="nav__link">Support</li>
+    <div class="mobile-menu closed" id="mobileMenu">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li>
+            <a href="#" class="nav__link">About</a>
+          </li>
+          <li>
+            <a href="#" class="nav__link">Careers</a>
+          </li>
+          <li>
+            <a href="#" class="nav__link">Events</a>
+          </li>
+          <li>
+            <a href="#" class="nav__link">Products</a>
+          </li>
+          <li>
+            <a href="#" class="nav__link">Support</a>
+          </li>
         </ul>
-      </nav> -->
-      <a href="/">
-        <img
-          class="logo"
-          src="./images/logo.svg"
-          alt="Loopstudios Logo"
-          title="Loopstudios"
-        />
-      </a>
-      <button class="menu-button">
-        <img src="./images//icon-hamburger.svg" alt="Open Menu" />
-      </button>
+      </nav>
+    </div>
+    <header class="header">
+      <div class="header__main">
+        <a href="/">
+          <img
+            class="logo"
+            src="./images/logo.svg"
+            alt="Loopstudios Logo"
+            title="Loopstudios"
+          />
+        </a>
+        <button class="menu-button menu-button--open" id="menuOpenButton">
+          <img src="./images/icon-hamburger.svg" alt="Open Menu" />
+        </button>
+        <button
+          class="menu-button menu-button--close closed"
+          id="menuCloseButton"
+        >
+          <img src="./images/icon-close.svg" alt="Open Menu" />
+        </button>
+      </div>
     </header>
     <main>
       <section class="hero" id="hero">
