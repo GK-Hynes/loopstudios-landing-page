@@ -115,6 +115,7 @@
         </div>
         <div class="product-grid">
           <div class="product product-1">
+            <div class="product__overlay"></div>
             <picture class="product__picture">
               <source
                 srcset="./images/desktop/image-deep-earth.jpg"
@@ -126,6 +127,7 @@
           </div>
           <div class="product product-2">
             <picture class="product__picture">
+              <div class="product__overlay"></div>
               <source
                 srcset="./images/desktop/image-night-arcade.jpg"
                 media="(min-width: 640px)"
@@ -135,6 +137,7 @@
             <h3 class="product__title">Night arcade</h3>
           </div>
           <div class="product product-3">
+            <div class="product__overlay"></div>
             <picture class="product__picture">
               <source
                 srcset="./images/desktop/image-soccer-team.jpg"
@@ -145,6 +148,7 @@
             <h3 class="product__title">Soccer team VR</h3>
           </div>
           <div class="product product-4">
+            <div class="product__overlay"></div>
             <picture class="product__picture">
               <source
                 srcset="./images/desktop/image-grid.jpg"
@@ -155,6 +159,7 @@
             <h3 class="product__title">The grid</h3>
           </div>
           <div class="product product-5">
+            <div class="product__overlay"></div>
             <picture class="product__picture">
               <source
                 srcset="./images/desktop/image-from-above.jpg"
@@ -165,6 +170,7 @@
             <h3 class="product__title">From up above VR</h3>
           </div>
           <div class="product product-6">
+            <div class="product__overlay"></div>
             <picture class="product__picture">
               <source
                 srcset="./images/desktop/image-pocket-borealis.jpg"
@@ -175,6 +181,7 @@
             <h3 class="product__title">Pocket borealis</h3>
           </div>
           <div class="product product-7">
+            <div class="product__overlay"></div>
             <picture class="product__picture">
               <source
                 srcset="./images/desktop/image-curiosity.jpg"
@@ -185,6 +192,7 @@
             <h3 class="product__title">The curiosity</h3>
           </div>
           <div class="product product-8">
+            <div class="product__overlay"></div>
             <picture class="product__picture">
               <source
                 srcset="./images/desktop/image-fisheye.jpg"
@@ -201,43 +209,49 @@
       </section>
     </main>
     <footer class="footer" id="footer">
-      <img
-        class="footer__logo"
-        src="./images/logo.svg"
-        alt="Loopstudios Logo"
-      />
-      <ul class="footer__list">
-        <li><a class="footer__link" href="#">About</a></li>
-        <li><a class="footer__link" href="#">Careers</a></li>
-        <li><a class="footer__link" href="#">Events</a></li>
-        <li><a class="footer__link" href="#">Products</a></li>
-        <li><a class="footer__link" href="#">Support</a></li>
-      </ul>
-      <div class="footer__social-links-wrapper">
-        <ul class="footer__social-links">
-          <li>
-            <a class="footer__social-link" href="#"
-              ><img src="./images/icon-facebook.svg" alt="Facebook Link"
-            /></a>
-          </li>
-          <li>
-            <a class="footer__social-link" href="#"
-              ><img src="./images/icon-twitter.svg" alt="Twitter Link"
-            /></a>
-          </li>
-          <li>
-            <a class="footer__social-link" href="#"
-              ><img src="./images/icon-pinterest.svg" alt="Pinterest Link"
-            /></a>
-          </li>
-          <li>
-            <a class="footer__social-link" href="#"
-              ><img src="./images/icon-instagram.svg" alt="Instagram Link"
-            /></a>
-          </li>
+      <div class="footer__content">
+        <img
+          class="footer__logo"
+          src="./images/logo.svg"
+          alt="Loopstudios Logo"
+        />
+        <ul class="footer__list">
+          <li><a class="footer__link" href="#">About</a></li>
+          <li><a class="footer__link" href="#">Careers</a></li>
+          <li><a class="footer__link" href="#">Events</a></li>
+          <li><a class="footer__link" href="#">Products</a></li>
+          <li><a class="footer__link" href="#">Support</a></li>
         </ul>
+        <div class="footer__social-links-wrapper">
+          <ul class="footer__social-links">
+            <li>
+              <a class="footer__social-link" href="#"
+                ><img src="./images/icon-facebook.svg" alt="Facebook Link"
+              /></a>
+            </li>
+            <li>
+              <a class="footer__social-link" href="#"
+                ><img src="./images/icon-twitter.svg" alt="Twitter Link"
+              /></a>
+            </li>
+            <li>
+              <a class="footer__social-link" href="#"
+                ><img src="./images/icon-pinterest.svg" alt="Pinterest Link"
+              /></a>
+            </li>
+            <li>
+              <a class="footer__social-link" href="#"
+                ><img src="./images/icon-instagram.svg" alt="Instagram Link"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__copyright-wrapper">
+          <p class="footer__copyright">
+            © 2021 Loopstudios. All rights reserved.
+          </p>
+        </div>
       </div>
-      <p class="footer__copyright">© 2021 Loopstudios. All rights reserved.</p>
       <div class="footer__attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
