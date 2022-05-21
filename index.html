@@ -20,7 +20,7 @@
     <title>Frontend Mentor | Loopstudios landing page</title>
   </head>
   <body>
-    <div class="mobile-menu closed" id="mobileMenu">
+    <div class="menu--mobile closed" id="mobileMenu">
       <nav class="nav">
         <ul class="nav__list">
           <li>
@@ -45,22 +45,22 @@
       <div class="header__main">
         <a href="/">
           <img
-            class="logo"
+            class="header__logo"
             src="./images/logo.svg"
             alt="Loopstudios Logo"
             title="Loopstudios"
           />
         </a>
-        <button class="menu-button menu-button--open" id="menuOpenButton">
+        <button class="menu__button menu__button--open" id="menuOpenButton">
           <img src="./images/icon-hamburger.svg" alt="Open Menu" />
         </button>
         <button
-          class="menu-button menu-button--close closed"
+          class="menu__button menu__button--close closed"
           id="menuCloseButton"
         >
           <img src="./images/icon-close.svg" alt="Open Menu" />
         </button>
-        <div class="desktop-menu" id="desktopMenu">
+        <div class="menu--desktop" id="desktopMenu">
           <nav class="nav">
             <ul class="nav__list nav__list--desktop">
               <li class="nav__list-item">
@@ -98,7 +98,7 @@
           />
         </div>
         <div class="about__content">
-          <h2 class="heading__secondary heading__about">
+          <h2 class="heading__secondary about__heading">
             The leader in interactive VR
           </h2>
           <p class="about__text">
