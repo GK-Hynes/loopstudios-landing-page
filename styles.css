@@ -4,7 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 :root {
@@ -13,6 +13,10 @@
   --dark-gray: hsl(0, 0%, 55%);
   --very-dark-gray: hsl(0, 0%, 41%);
   --max-width: 1112px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -127,7 +131,10 @@ img {
   min-height: 100vh;
   width: 100%;
   padding: 0 1.5rem;
-  background: no-repeat center url("./images/mobile/image-hero.jpg");
+  background-image: url("./images/mobile/image-hero.jpg");
+  background-color: rgba(0, 0, 0, 0.5);
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   color: var(--white);
   display: flex;
@@ -192,6 +199,14 @@ img {
   position: relative;
   background: no-repeat center/cover;
   cursor: pointer;
+}
+
+.product:hover .product__overlay {
+  background: rgb(255, 255, 255, 0.7);
+}
+
+.product:hover .product__title {
+  color: var(--black);
 }
 
 .product__picture,
@@ -328,13 +343,29 @@ img {
     display: flex;
     align-items: center;
     text-transform: none;
+    position: relative;
+  }
+
+  .nav__link::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    background-color: var(--white);
+    left: 25%;
+    bottom: 15%;
+    transition: width 300ms ease-in;
+  }
+
+  .nav__link:hover::after {
+    width: 50%;
   }
 
   /* Hero styles */
 
   .hero {
-    background: no-repeat center url("./images/desktop/image-hero.jpg");
-    background-size: cover;
+    background-image: url("./images/desktop/image-hero.jpg");
+    background-blend-mode: darken;
     min-height: 40.625rem;
   }
 
@@ -418,6 +449,10 @@ img {
 
   .product__link--mobile {
     display: none;
+  }
+
+  .product__link--desktop {
+    display: inline-flex;
   }
 
   /* Footer styles */
